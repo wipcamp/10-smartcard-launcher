@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "dev": "nodemon index.js",
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "dotenv": "^5.0.1",
+        "socket.io-client": "^2.1.0",
+        "thaismartcardreader.js": "https://github.com/sgnsys3/thaismartcardreader.js"
+    }
+}
