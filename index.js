@@ -2,12 +2,11 @@ require('dotenv').config()
 
 const stdin = process.openStdin()
 const { Reader } = require('thaismartcardreader.js')
-const io = require('socket.io-client')
 
-const socket = io.connect(process.env.SOCKET_URL)
+const io = require('socket.io').listen(process.env.SOCKER_PORT || 3002)
 const myReader = new Reader()
 
-let wipId = ''
+let userId = ''
 
 console.log('Welcome for WIP Camp #10 Thai Smartcard Launcher!')
 console.log('- Please Enter Your WIP ID for Start Program. -')
