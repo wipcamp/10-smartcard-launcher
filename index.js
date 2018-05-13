@@ -26,11 +26,8 @@ myReader.on('error', async (err) => {
 })
 
 myReader.on('card-readed', async card => {
-  console.log(card.cid)
-  socket.emit('personIdServer', {
-    personId: card.cid,
-    userId: wipId
-  })
+  console.log(card.cid)    
+  io.emit(`personIdClient-${userId}`, card.cid)
 })
 
 myReader.on('device-deactivated', () => { console.log('device-deactivated') })
