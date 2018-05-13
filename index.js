@@ -11,8 +11,8 @@ let userId = ''
 console.log('Welcome for WIP Camp #10 Thai Smartcard Launcher!')
 console.log('- Please Enter Your WIP ID for Start Program. -')
 stdin.addListener('data', function(data) {
-    wipId = data.toString().trim()
-    console.log("Your WIP ID is " +  wipId)
+    userId = data.toString().trim()
+    console.log("Your WIP ID is " +  userId)
     console.log('Ready for Read Thai Smart Card !')
 })
 
