@@ -20,9 +20,10 @@ myReader.on('error', async (err) => {
   console.log(err)
 })
 
-myReader.on('card-readed', async card => {
-  console.log(card.cid)    
-  io.emit(`personIdClient`, card.cid)
+myReader.on('card-inserted', async person => {
+  const cid = await person.getCid()
+  console.log(`CitizenID: ${cid}`)
+  io.emit(`personIdClient`, cid)
 })
 
 myReader.on('device-deactivated', () => { console.log('device-deactivated') })

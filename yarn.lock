@@ -190,9 +190,9 @@ safe-buffer@~5.1.0:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
 
-smartcard@1.0.22:
-  version "1.0.22"
-  resolved "https://registry.yarnpkg.com/smartcard/-/smartcard-1.0.22.tgz#277b7255b6acf7b47c097457a614a1ad664113a8"
+smartcard@^1.0.23:
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/smartcard/-/smartcard-1.0.23.tgz#dbf24d83d5ffc2b3ff66bb2726bd9b4ff7689ffd"
   dependencies:
     hexify "^1.0.1"
     pcsclite "^0.5.0"
@@ -239,11 +239,11 @@ socket.io@^2.1.0:
     socket.io-client "2.1.0"
     socket.io-parser "~3.2.0"
 
-"thaismartcardreader.js@https://github.com/sgnsys3/thaismartcardreader.js":
-  version "0.0.2"
-  resolved "https://github.com/sgnsys3/thaismartcardreader.js#0a74c392672ba88cbfd063e1858558c514ed653d"
+thaismartcardreader.js@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/thaismartcardreader.js/-/thaismartcardreader.js-0.2.2.tgz#52bd61e0c09e3b1fb660139cda458821347175a4"
   dependencies:
-    smartcard "1.0.22"
+    smartcard "^1.0.23"
     utf8 "^3.0.0"
 
 to-array@0.1.4:
